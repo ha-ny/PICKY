@@ -9,6 +9,14 @@ import UIKit
 
 class LoginView: BaseView {
     
+    let logoLabel = {
+        let view = UILabel()
+        view.text = "PICKY"
+        view.textColor = .signatureColor
+        view.font = .customFont(style: .logo, ofSize: 45)
+        return view
+    }()
+    
     let emailView = {
         let view = UIView()
         view.backgroundColor = .systemGray6
@@ -26,7 +34,7 @@ class LoginView: BaseView {
     let emailTextField = {
         let view = UITextField()
         view.placeholder = "이메일"
-        view.font = .systemFont(ofSize: 14)
+        view.font = .customFont(ofSize: 14)
         return view
     }()
     
@@ -47,7 +55,7 @@ class LoginView: BaseView {
     let passwordTextField = {
         let view = UITextField()
         view.placeholder = "비밀번호"
-        view.font = .systemFont(ofSize: 14)
+        view.font = .customFont(ofSize: 14)
         return view
     }()
     
@@ -56,7 +64,7 @@ class LoginView: BaseView {
         view.backgroundColor = .signatureColor
         view.setTitle("로그인", for: .normal)
         view.setTitleColor(.white, for: .normal)
-        view.titleLabel?.font = .boldSystemFont(ofSize: 16)
+        view.titleLabel?.font = .customFont(style: .bold, ofSize: 16)
         view.layer.cornerRadius = 30
         return view
     }()
@@ -65,7 +73,7 @@ class LoginView: BaseView {
         let view = UILabel()
         view.text = "계정이 없으신가요?"
         view.textColor = .lightGray
-        view.font = .systemFont(ofSize: 13)
+        view.font = .customFont(ofSize: 12)
         view.textAlignment = .right
         return view
     }()
@@ -74,11 +82,12 @@ class LoginView: BaseView {
         let view = UIButton()
         view.setTitle("회원가입", for: .normal)
         view.setTitleColor(.signatureColor, for: .normal)
-        view.titleLabel?.font = .boldSystemFont(ofSize: 14)
+        view.titleLabel?.font = .customFont(style: .bold, ofSize: 14)
         return view
     }()
     
     override func setConfiguration() {
+        addSubview(logoLabel)
         addSubview(emailView)
         emailView.addSubview(emailImage)
         emailView.addSubview(emailTextField)
@@ -93,8 +102,13 @@ class LoginView: BaseView {
     }
     
     override func setConstraints() {
+        logoLabel.snp.makeConstraints {
+            $0.top.equalTo(self.safeAreaLayoutGuide).offset(80)
+            $0.centerX.equalTo(self)
+        }
+        
         emailView.snp.makeConstraints {
-            $0.top.equalTo(self.safeAreaLayoutGuide).offset(200)
+            $0.top.equalTo(logoLabel.snp.bottom).offset(110)
             $0.height.equalTo(50)
             $0.leading.trailing.equalTo(self).inset(24)
         }
