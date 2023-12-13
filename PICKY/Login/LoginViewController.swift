@@ -8,7 +8,15 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    
+    let mainView = LoginView()
+    
+    override func loadView() {
+        self.view = mainView
+    }
+    
     override func viewDidLoad() {
-        
+        super.viewDidLoad()
+        view.backgroundColor = .white
     }
 }

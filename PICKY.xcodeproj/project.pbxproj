@@ -16,6 +16,8 @@
 		3F037E192B2941E80096814D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3F037E182B2941E80096814D /* SnapKit */; };
 		3F037E1C2B2942140096814D /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 3F037E1B2B2942140096814D /* Moya */; };
 		3F037E222B2942490096814D /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E212B2942490096814D /* BaseView.swift */; };
+		3F037E252B294D720096814D /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E242B294D720096814D /* UIColor+extension.swift */; };
+		3F037E272B294F450096814D /* UIImage+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E262B294F450096814D /* UIImage+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		3F037E132B29418E0096814D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3F037E152B2941CA0096814D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		3F037E212B2942490096814D /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		3F037E242B294D720096814D /* UIColor+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
+		3F037E262B294F450096814D /* UIImage+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				3F037E212B2942490096814D /* BaseView.swift */,
+				3F037E232B294D5C0096814D /* Extension */,
 				3F037E202B2942310096814D /* API */,
 			);
 			path = Common;
@@ -120,6 +125,15 @@
 			children = (
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		3F037E232B294D5C0096814D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3F037E242B294D720096814D /* UIColor+extension.swift */,
+				3F037E262B294F450096814D /* UIImage+extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,8 +215,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F037E142B29418E0096814D /* LoginViewController.swift in Sources */,
+				3F037E252B294D720096814D /* UIColor+extension.swift in Sources */,
 				3F037DF82B28CF6E0096814D /* AppDelegate.swift in Sources */,
 				3F037E222B2942490096814D /* BaseView.swift in Sources */,
+				3F037E272B294F450096814D /* UIImage+extension.swift in Sources */,
 				3F037E162B2941CA0096814D /* LoginView.swift in Sources */,
 				3F037DFA2B28CF6E0096814D /* SceneDelegate.swift in Sources */,
 			);
@@ -342,7 +358,6 @@
 				INFOPLIST_FILE = PICKY/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -374,7 +389,6 @@
 				INFOPLIST_FILE = PICKY/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
