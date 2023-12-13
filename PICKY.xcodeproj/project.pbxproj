@@ -22,6 +22,9 @@
 		3F037E2C2B29C2BC0096814D /* SCDream4.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3F037E2A2B29C2BC0096814D /* SCDream4.otf */; };
 		3F037E2F2B29C3090096814D /* UIFont+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E2E2B29C3090096814D /* UIFont+extension.swift */; };
 		3F037E312B29CBA60096814D /* RixInooAriDuri_Pro Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3F037E302B29CBA60096814D /* RixInooAriDuri_Pro Regular.otf */; };
+		3F037E342B29CE360096814D /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E332B29CE360096814D /* JoinViewController.swift */; };
+		3F037E362B29CE410096814D /* JoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E352B29CE410096814D /* JoinView.swift */; };
+		3F037E392B2A02020096814D /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F037E382B2A02020096814D /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		3F037E2A2B29C2BC0096814D /* SCDream4.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream4.otf; sourceTree = "<group>"; };
 		3F037E2E2B29C3090096814D /* UIFont+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+extension.swift"; sourceTree = "<group>"; };
 		3F037E302B29CBA60096814D /* RixInooAriDuri_Pro Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RixInooAriDuri_Pro Regular.otf"; sourceTree = "<group>"; };
+		3F037E332B29CE360096814D /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
+		3F037E352B29CE410096814D /* JoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinView.swift; sourceTree = "<group>"; };
+		3F037E382B2A02020096814D /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,11 +82,12 @@
 			children = (
 				3F037E1F2B29422A0096814D /* Common */,
 				3F037E0E2B293E570096814D /* Login */,
+				3F037E322B29CE190096814D /* Join */,
 				3F037E0F2B293E7E0096814D /* Profile */,
 				3F037E102B293E9A0096814D /* Footprint */,
 				3F037E0D2B293E3A0096814D /* Delegate */,
 				3F037E2D2B29C2C80096814D /* Font */,
-				3F037E0B2B293DCB0096814D /* LaunchScreen.storyboard */,
+				3F037E372B2A01ED0096814D /* LaunchScreen */,
 				3F037E002B28CF6F0096814D /* Assets.xcassets */,
 				3F037E052B28CF6F0096814D /* Info.plist */,
 			);
@@ -156,6 +163,24 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		3F037E322B29CE190096814D /* Join */ = {
+			isa = PBXGroup;
+			children = (
+				3F037E352B29CE410096814D /* JoinView.swift */,
+				3F037E332B29CE360096814D /* JoinViewController.swift */,
+			);
+			path = Join;
+			sourceTree = "<group>";
+		};
+		3F037E372B2A01ED0096814D /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3F037E382B2A02020096814D /* logo.png */,
+				3F037E0B2B293DCB0096814D /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -224,6 +249,7 @@
 			files = (
 				3F037E2B2B29C2BC0096814D /* SCDream6.otf in Resources */,
 				3F037E312B29CBA60096814D /* RixInooAriDuri_Pro Regular.otf in Resources */,
+				3F037E392B2A02020096814D /* logo.png in Resources */,
 				3F037E0C2B293DCB0096814D /* LaunchScreen.storyboard in Resources */,
 				3F037E2C2B29C2BC0096814D /* SCDream4.otf in Resources */,
 				3F037E012B28CF6F0096814D /* Assets.xcassets in Resources */,
@@ -241,9 +267,11 @@
 				3F037E252B294D720096814D /* UIColor+extension.swift in Sources */,
 				3F037DF82B28CF6E0096814D /* AppDelegate.swift in Sources */,
 				3F037E222B2942490096814D /* BaseView.swift in Sources */,
+				3F037E342B29CE360096814D /* JoinViewController.swift in Sources */,
 				3F037E272B294F450096814D /* UIImage+extension.swift in Sources */,
 				3F037E2F2B29C3090096814D /* UIFont+extension.swift in Sources */,
 				3F037E162B2941CA0096814D /* LoginView.swift in Sources */,
+				3F037E362B29CE410096814D /* JoinView.swift in Sources */,
 				3F037DFA2B28CF6E0096814D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

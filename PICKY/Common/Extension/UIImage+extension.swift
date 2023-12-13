@@ -8,8 +8,14 @@
 import UIKit
 
 extension UIImage {
-    enum imageName: String {
+    enum AssetImage: String {
         case password
         case email
+        case user
+        case emptyProfileImage
+    }
+    
+    static func customImage(imageName: AssetImage) -> UIImage {
+        return UIImage(named: imageName.rawValue) ?? UIImage()
     }
 }

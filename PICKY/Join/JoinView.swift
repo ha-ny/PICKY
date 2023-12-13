@@ -1,5 +1,5 @@
 //
-//  LoginView.swift
+//  JoinView.swift
 //  PICKY
 //
 //  Created by 김하은 on 12/13/23.
@@ -7,13 +7,46 @@
 
 import UIKit
 
-class LoginView: BaseView {
+class JoinView: BaseView {
+
+    let userImage = {
+        let view = UIImageView()
+        view.image = UIImage.customImage(imageName: .emptyProfileImage)
+        view.layer.borderColor = UIColor.systemGray6.cgColor
+        view.layer.borderWidth = 1
+        view.layer.cornerRadius = 60
+        return view
+    }()
     
-    let logoLabel = {
-        let view = UILabel()
-        view.text = "PICKY"
-        view.textColor = .signatureColor
-        view.font = .customFont(style: .logo, ofSize: 45)
+    let galleryButton = {
+        let view = UIButton()
+        let configuration = UIImage.SymbolConfiguration(pointSize: 35)
+        let image = UIImage(systemName: "camera.circle.fill", withConfiguration: configuration)
+        view.setImage(image, for: .normal)
+        view.tintColor = .signatureColor
+        view.backgroundColor = .white
+        view.layer.cornerRadius = 35
+        return view
+    }()
+    
+    let nicknameView = {
+        let view = UIView()
+        view.backgroundColor = .systemGray6
+        view.layer.cornerRadius = 25
+        return view
+    }()
+    
+    let nicknameImage = {
+        let view = UIImageView()
+            view.image = UIImage.customImage(imageName: .user)
+        view.contentMode = .scaleAspectFit
+        return view
+    }()
+    
+    let nicknameTextField = {
+        let view = UITextField()
+        view.placeholder = "닉네임"
+        view.font = .customFont(ofSize: 14)
         return view
     }()
     
@@ -59,35 +92,41 @@ class LoginView: BaseView {
         return view
     }()
     
-    let loginButton = {
+    let joinButton = {
         let view = UIButton()
         view.backgroundColor = .signatureColor
-        view.setTitle("로그인", for: .normal)
+        view.setTitle("회원가입", for: .normal)
         view.setTitleColor(.white, for: .normal)
         view.titleLabel?.font = .customFont(style: .bold, ofSize: 16)
         view.layer.cornerRadius = 30
         return view
     }()
     
-    let joinLabel = {
+    let loginLabel = {
         let view = UILabel()
-        view.text = "계정이 없으신가요?"
+        view.text = "계정이 있으신가요?"
         view.textColor = .lightGray
         view.font = .customFont(ofSize: 12)
         view.textAlignment = .right
         return view
     }()
     
-    let joinButton = {
+    let loginButton = {
         let view = UIButton()
-        view.setTitle("회원가입", for: .normal)
+        view.setTitle("로그인", for: .normal)
         view.setTitleColor(.signatureColor, for: .normal)
         view.titleLabel?.font = .customFont(style: .bold, ofSize: 14)
         return view
     }()
     
     override func setConfiguration() {
-        addSubview(logoLabel)
+        addSubview(userImage)
+        addSubview(galleryButton)
+        
+        addSubview(nicknameView)
+        nicknameView.addSubview(nicknameImage)
+        nicknameView.addSubview(nicknameTextField)
+        
         addSubview(emailView)
         emailView.addSubview(emailImage)
         emailView.addSubview(emailTextField)
@@ -95,20 +134,44 @@ class LoginView: BaseView {
         addSubview(passwordView)
         passwordView.addSubview(passwordImage)
         passwordView.addSubview(passwordTextField)
-        
-        addSubview(loginButton)
-        addSubview(joinLabel)
+    
         addSubview(joinButton)
+        addSubview(loginLabel)
+        addSubview(loginButton)
     }
     
     override func setConstraints() {
-        logoLabel.snp.makeConstraints {
-            $0.top.equalTo(self.safeAreaLayoutGuide).offset(100)
+        userImage.snp.makeConstraints {
+            $0.top.equalTo(self.safeAreaLayoutGuide).offset(80)
+            $0.size.equalTo(120)
             $0.centerX.equalTo(self)
         }
         
+        galleryButton.snp.makeConstraints {
+            $0.bottom.equalTo(userImage.snp.bottom)
+            $0.trailing.equalTo(userImage.snp.trailing)
+        }
+        
+        nicknameView.snp.makeConstraints {
+            $0.top.equalTo(userImage.snp.bottom).offset(100)
+            $0.height.equalTo(50)
+            $0.leading.trailing.equalTo(self).inset(24)
+        }
+        
+        nicknameImage.snp.makeConstraints {
+            $0.leading.equalTo(nicknameView).inset(22)
+            $0.width.equalTo(28)
+            $0.top.bottom.equalTo(nicknameView).inset(8)
+        }
+        
+        nicknameTextField.snp.makeConstraints {
+            $0.leading.equalTo(nicknameImage.snp.trailing).offset(16)
+            $0.top.bottom.equalTo(nicknameView).inset(4)
+            $0.trailing.equalTo(nicknameView).inset(16)
+        }
+        
         emailView.snp.makeConstraints {
-            $0.top.equalTo(logoLabel.snp.bottom).offset(110)
+            $0.top.equalTo(nicknameView.snp.bottom).offset(22)
             $0.height.equalTo(50)
             $0.leading.trailing.equalTo(self).inset(24)
         }
@@ -143,22 +206,22 @@ class LoginView: BaseView {
             $0.trailing.equalTo(passwordView).inset(16)
         }
         
-        loginButton.snp.makeConstraints {
+        joinButton.snp.makeConstraints {
             $0.top.equalTo(passwordView.snp.bottom).offset(40)
             $0.height.equalTo(60)
             $0.leading.trailing.equalTo(passwordView)
         }
         
-        joinLabel.snp.makeConstraints {
-            $0.top.equalTo(loginButton.snp.bottom).offset(8)
-            $0.height.equalTo(joinButton.snp.height)
-            $0.leading.equalTo(loginButton.snp.leading)
+        loginLabel.snp.makeConstraints {
+            $0.top.equalTo(joinButton.snp.bottom).offset(8)
+            $0.height.equalTo(loginButton.snp.height)
+            $0.leading.equalTo(joinButton.snp.leading)
         }
         
-        joinButton.snp.makeConstraints {
-            $0.top.equalTo(joinLabel.snp.top)
-            $0.trailing.equalTo(loginButton.snp.trailing).inset(16)
-            $0.leading.equalTo(joinLabel.snp.trailing).offset(8)
+        loginButton.snp.makeConstraints {
+            $0.top.equalTo(loginLabel.snp.top)
+            $0.trailing.equalTo(joinButton.snp.trailing).inset(16)
+            $0.leading.equalTo(loginLabel.snp.trailing).offset(8)
         }
     }
 }
