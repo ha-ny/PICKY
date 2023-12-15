@@ -18,5 +18,16 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        addTargets()
+    }
+    
+    func addTargets() {
+        mainView.joinButton.addTarget(self, action: #selector(joinButtonTap), for: .touchUpInside)
+    }
+    
+    @objc func joinButtonTap() {
+        let vc = JoinViewController()
+        vc.modalPresentationStyle = .fullScreen
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

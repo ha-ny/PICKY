@@ -18,5 +18,15 @@ class JoinViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        navigationItem.hidesBackButton = true
+        addTargets()
+    }
+    
+    func addTargets() {
+        mainView.loginButton.addTarget(self, action: #selector(loginButtonTap), for: .touchUpInside)
+    }
+    
+    @objc func loginButtonTap() {
+        navigationController?.popViewController(animated: true)
     }
 }
