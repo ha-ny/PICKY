@@ -47,6 +47,7 @@
 		3F037E6A2B2CA4D60096814D /* PickyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E692B2CA4D60096814D /* PickyViewController.swift */; };
 		3F037E6C2B2CA4E40096814D /* PickyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E6B2B2CA4E40096814D /* PickyView.swift */; };
 		3F037E6F2B2CA6710096814D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E6E2B2CA6710096814D /* TabBarViewController.swift */; };
+		3F037E732B2CA9B70096814D /* PickyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E722B2CA9B70096814D /* PickyViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,7 @@
 		3F037E692B2CA4D60096814D /* PickyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickyViewController.swift; sourceTree = "<group>"; };
 		3F037E6B2B2CA4E40096814D /* PickyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickyView.swift; sourceTree = "<group>"; };
 		3F037E6E2B2CA6710096814D /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		3F037E722B2CA9B70096814D /* PickyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickyViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,9 +129,7 @@
 				3F037E1F2B29422A0096814D /* Common */,
 				3F037E0E2B293E570096814D /* Login */,
 				3F037E322B29CE190096814D /* Join */,
-				3F037E682B2CA4AE0096814D /* Picky */,
-				3F037E102B293E9A0096814D /* Footprint */,
-				3F037E0F2B293E7E0096814D /* Profile */,
+				3F037E702B2CA8F90096814D /* TabView */,
 				3F037E0D2B293E3A0096814D /* Delegate */,
 				3F037E2D2B29C2C80096814D /* Font */,
 				3F037E372B2A01ED0096814D /* LaunchScreen */,
@@ -175,7 +175,6 @@
 		3F037E1F2B29422A0096814D /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				3F037E6E2B2CA6710096814D /* TabBarViewController.swift */,
 				3F037E212B2942490096814D /* BaseView.swift */,
 				3F037E642B2CA4640096814D /* UserDefaultsKeyType.swift */,
 				3F037E232B294D5C0096814D /* Extension */,
@@ -259,13 +258,33 @@
 			path = Error;
 			sourceTree = "<group>";
 		};
-		3F037E682B2CA4AE0096814D /* Picky */ = {
+		3F037E682B2CA4AE0096814D /* MyList */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = MyList;
+			sourceTree = "<group>";
+		};
+		3F037E702B2CA8F90096814D /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				3F037E6E2B2CA6710096814D /* TabBarViewController.swift */,
+				3F037E712B2CA9790096814D /* PICKY */,
+				3F037E682B2CA4AE0096814D /* MyList */,
+				3F037E102B293E9A0096814D /* Footprint */,
+				3F037E0F2B293E7E0096814D /* Profile */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
+		3F037E712B2CA9790096814D /* PICKY */ = {
+			isa = PBXGroup;
+			children = (
+				3F037E722B2CA9B70096814D /* PickyViewModel.swift */,
 				3F037E6B2B2CA4E40096814D /* PickyView.swift */,
 				3F037E692B2CA4D60096814D /* PickyViewController.swift */,
 			);
-			path = Picky;
+			path = PICKY;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,6 +386,7 @@
 				3F037E6C2B2CA4E40096814D /* PickyView.swift in Sources */,
 				3F037E472B2B565C0096814D /* JoinStatusCode.swift in Sources */,
 				3F037E562B2B631E0096814D /* Withdraw.swift in Sources */,
+				3F037E732B2CA9B70096814D /* PickyViewModel.swift in Sources */,
 				3F037E672B2CA4920096814D /* String+extension.swift in Sources */,
 				3F037E5F2B2BE15F0096814D /* JoinViewModel.swift in Sources */,
 				3F037E342B29CE360096814D /* JoinViewController.swift in Sources */,

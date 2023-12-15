@@ -8,7 +8,7 @@
 import Foundation
 import Moya
 
-final class LoginViewModel {
+class LoginViewModel {
     
     private let apiManager = APIManager<APITarget.Account>()
     
@@ -22,10 +22,12 @@ final class LoginViewModel {
             if loginStatusCode.rawValue == 200 {
                 do {
                     let data = try JSONDecoder().decode(ResponseLoginModel.self, from: success.data)
-                    print(data.token)
-                    print(data.refreshToken)
+                    print("token: ", data.token)
+                    print("--------------------------------")
+                    print("refreshToken: ", data.refreshToken)
                     UserDefaults.standard.setValue(data.token, forKey: UserDefaultsKeyType.token.rawValue)
                     UserDefaults.standard.setValue(data.refreshToken, forKey: UserDefaultsKeyType.refreshToken.rawValue)
+                    completion(loginStatusCode)
                 } catch(let error) {
                     print(error)
                     completion(nil)

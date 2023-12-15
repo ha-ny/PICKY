@@ -32,7 +32,7 @@ final class LoginViewController: UIViewController {
                 return
             }
             
-            let loginData = LoginModel(email: email, password: password)
+            let loginData = LoginModel(email: email, password: password.sha256())
             owner.viewModel.requestAPI(loginModel: loginData) { status in
                 guard let status else {
                     owner.toastMessage(message: String.earlyExitMessge)
@@ -40,8 +40,11 @@ final class LoginViewController: UIViewController {
                 }
                 
                 if status.rawValue == 200 {
-                    let vc = PickyViewController()
-                    
+                    let vc = TabBarViewController()
+                    if let window = UIApplication.shared.windows.first {
+                        window.rootViewController = vc
+                        window.makeKeyAndVisible()
+                    }
                 } else {
                     owner.toastMessage(message: status.statusDescription)
                 }
