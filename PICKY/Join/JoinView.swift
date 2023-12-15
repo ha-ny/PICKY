@@ -8,7 +8,7 @@
 import UIKit
 
 class JoinView: BaseView {
-
+    
     let userImage = {
         let view = UIImageView()
         view.image = UIImage.customImage(imageName: .emptyProfileImage)
@@ -29,21 +29,21 @@ class JoinView: BaseView {
         return view
     }()
     
-    let nicknameView = {
+    let nickNameView = {
         let view = UIView()
         view.backgroundColor = .systemGray6
         view.layer.cornerRadius = 25
         return view
     }()
     
-    let nicknameImage = {
+    let nickNameImage = {
         let view = UIImageView()
-            view.image = UIImage.customImage(imageName: .user)
+        view.image = UIImage.customImage(imageName: .user)
         view.contentMode = .scaleAspectFit
         return view
     }()
     
-    let nicknameTextField = {
+    let nickNameTextField = {
         let view = UITextField()
         view.placeholder = "닉네임"
         view.font = .customFont(ofSize: 14)
@@ -123,9 +123,9 @@ class JoinView: BaseView {
         addSubview(userImage)
         addSubview(galleryButton)
         
-        addSubview(nicknameView)
-        nicknameView.addSubview(nicknameImage)
-        nicknameView.addSubview(nicknameTextField)
+        addSubview(nickNameView)
+        nickNameView.addSubview(nickNameImage)
+        nickNameView.addSubview(nickNameTextField)
         
         addSubview(emailView)
         emailView.addSubview(emailImage)
@@ -134,7 +134,7 @@ class JoinView: BaseView {
         addSubview(passwordView)
         passwordView.addSubview(passwordImage)
         passwordView.addSubview(passwordTextField)
-    
+        
         addSubview(joinButton)
         addSubview(loginLabel)
         addSubview(loginButton)
@@ -152,26 +152,26 @@ class JoinView: BaseView {
             $0.trailing.equalTo(userImage.snp.trailing)
         }
         
-        nicknameView.snp.makeConstraints {
+        nickNameView.snp.makeConstraints {
             $0.top.equalTo(userImage.snp.bottom).offset(100)
             $0.height.equalTo(50)
             $0.leading.trailing.equalTo(self).inset(24)
         }
         
-        nicknameImage.snp.makeConstraints {
-            $0.leading.equalTo(nicknameView).inset(22)
+        nickNameImage.snp.makeConstraints {
+            $0.leading.equalTo(nickNameView).inset(22)
             $0.width.equalTo(28)
-            $0.top.bottom.equalTo(nicknameView).inset(8)
+            $0.top.bottom.equalTo(nickNameView).inset(8)
         }
         
-        nicknameTextField.snp.makeConstraints {
-            $0.leading.equalTo(nicknameImage.snp.trailing).offset(16)
-            $0.top.bottom.equalTo(nicknameView).inset(4)
-            $0.trailing.equalTo(nicknameView).inset(16)
+        nickNameTextField.snp.makeConstraints {
+            $0.leading.equalTo(nickNameImage.snp.trailing).offset(16)
+            $0.top.bottom.equalTo(nickNameView).inset(4)
+            $0.trailing.equalTo(nickNameView).inset(16)
         }
         
         emailView.snp.makeConstraints {
-            $0.top.equalTo(nicknameView.snp.bottom).offset(22)
+            $0.top.equalTo(nickNameView.snp.bottom).offset(22)
             $0.height.equalTo(50)
             $0.leading.trailing.equalTo(self).inset(24)
         }

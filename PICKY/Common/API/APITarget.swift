@@ -12,7 +12,6 @@ struct APITarget {
     enum Account {
         case login(model: LoginModel)
         case join(model: JoinModel)
-        case validationEmail(model: ValidationEmailModel) //이메일 중복 확인
         case reAcessToken(authorization: String, refresh: String)   //토큰 갱신
         case withdraw(authorization: String)       //탈퇴
     }
@@ -55,8 +54,6 @@ extension APITarget.Account: TargetType {
             return "/login"
         case .join:
             return "/join"
-        case .validationEmail:
-            return "/validation/email"
         case .reAcessToken:
             return "/refresh"
         case .withdraw:
@@ -66,7 +63,7 @@ extension APITarget.Account: TargetType {
     
     var method: Moya.Method {
         switch self {
-        case .login, .join, .validationEmail:
+        case .login, .join:
             return .post
         case .reAcessToken, .withdraw:
             return .get
@@ -79,8 +76,6 @@ extension APITarget.Account: TargetType {
             return .requestJSONEncodable(model)
         case .join(let model):
             return .requestJSONEncodable(model)
-        case .validationEmail(let model):
-            return .requestJSONEncodable(model)
         case .reAcessToken, .withdraw:
             return .requestPlain
         }
@@ -88,7 +83,7 @@ extension APITarget.Account: TargetType {
     
     var headers: [String : String]? {
         switch self {
-        case .login, .join, .validationEmail:
+        case .login, .join:
             return ["Content-Type" : "application/json", "SesacKey" : APIInfo.key]
         case .reAcessToken(let authorization, let refresh):
             return ["Authorization" : authorization, "SesacKey" : APIInfo.key, "Refresh": refresh]

@@ -8,7 +8,7 @@
 import Foundation
 
 struct JoinModel: Encodable {
-    let email: String
-    let password: String
-    let nick: String
+    var email: String
+    var password: String
+    var nick: String
 }

@@ -13,7 +13,7 @@ enum LoginError: Int, Error {
 }
 
 extension LoginError: LocalizedError {
-    var description: String {
+    var statusDescription: String {
         switch self {
         case .missingValue:
             return "정보를 모두 입력해 주세요"
