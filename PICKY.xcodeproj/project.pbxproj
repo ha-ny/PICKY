@@ -32,7 +32,7 @@
 		3F037E442B2B53660096814D /* JoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E432B2B53660096814D /* JoinModel.swift */; };
 		3F037E472B2B565C0096814D /* JoinStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E462B2B565C0096814D /* JoinStatusCode.swift */; };
 		3F037E4E2B2B5B890096814D /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E4D2B2B5B890096814D /* LoginModel.swift */; };
-		3F037E502B2B5BB60096814D /* LoginError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E4F2B2B5BB50096814D /* LoginError.swift */; };
+		3F037E502B2B5BB60096814D /* LoginStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E4F2B2B5BB50096814D /* LoginStatusCode.swift */; };
 		3F037E522B2B60C90096814D /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E512B2B60C90096814D /* TokenModel.swift */; };
 		3F037E542B2B610F0096814D /* AcessTokenError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E532B2B610F0096814D /* AcessTokenError.swift */; };
 		3F037E562B2B631E0096814D /* Withdraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E552B2B631E0096814D /* Withdraw.swift */; };
@@ -41,6 +41,12 @@
 		3F037E5D2B2BE1350096814D /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3F037E5C2B2BE1350096814D /* RxSwift */; };
 		3F037E5F2B2BE15F0096814D /* JoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E5E2B2BE15F0096814D /* JoinViewModel.swift */; };
 		3F037E612B2BE9870096814D /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E602B2BE9870096814D /* UIViewController+extension.swift */; };
+		3F037E632B2C97750096814D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E622B2C97750096814D /* LoginViewModel.swift */; };
+		3F037E652B2CA4640096814D /* UserDefaultsKeyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E642B2CA4640096814D /* UserDefaultsKeyType.swift */; };
+		3F037E672B2CA4920096814D /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E662B2CA4920096814D /* String+extension.swift */; };
+		3F037E6A2B2CA4D60096814D /* PickyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E692B2CA4D60096814D /* PickyViewController.swift */; };
+		3F037E6C2B2CA4E40096814D /* PickyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E6B2B2CA4E40096814D /* PickyView.swift */; };
+		3F037E6F2B2CA6710096814D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E6E2B2CA6710096814D /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,12 +75,18 @@
 		3F037E432B2B53660096814D /* JoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinModel.swift; sourceTree = "<group>"; };
 		3F037E462B2B565C0096814D /* JoinStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinStatusCode.swift; sourceTree = "<group>"; };
 		3F037E4D2B2B5B890096814D /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
-		3F037E4F2B2B5BB50096814D /* LoginError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginError.swift; sourceTree = "<group>"; };
+		3F037E4F2B2B5BB50096814D /* LoginStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStatusCode.swift; sourceTree = "<group>"; };
 		3F037E512B2B60C90096814D /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
 		3F037E532B2B610F0096814D /* AcessTokenError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcessTokenError.swift; sourceTree = "<group>"; };
 		3F037E552B2B631E0096814D /* Withdraw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Withdraw.swift; sourceTree = "<group>"; };
 		3F037E5E2B2BE15F0096814D /* JoinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewModel.swift; sourceTree = "<group>"; };
 		3F037E602B2BE9870096814D /* UIViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
+		3F037E622B2C97750096814D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		3F037E642B2CA4640096814D /* UserDefaultsKeyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeyType.swift; sourceTree = "<group>"; };
+		3F037E662B2CA4920096814D /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
+		3F037E692B2CA4D60096814D /* PickyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickyViewController.swift; sourceTree = "<group>"; };
+		3F037E6B2B2CA4E40096814D /* PickyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickyView.swift; sourceTree = "<group>"; };
+		3F037E6E2B2CA6710096814D /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +127,9 @@
 				3F037E1F2B29422A0096814D /* Common */,
 				3F037E0E2B293E570096814D /* Login */,
 				3F037E322B29CE190096814D /* Join */,
-				3F037E0F2B293E7E0096814D /* Profile */,
+				3F037E682B2CA4AE0096814D /* Picky */,
 				3F037E102B293E9A0096814D /* Footprint */,
+				3F037E0F2B293E7E0096814D /* Profile */,
 				3F037E0D2B293E3A0096814D /* Delegate */,
 				3F037E2D2B29C2C80096814D /* Font */,
 				3F037E372B2A01ED0096814D /* LaunchScreen */,
@@ -138,6 +151,7 @@
 		3F037E0E2B293E570096814D /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				3F037E622B2C97750096814D /* LoginViewModel.swift */,
 				3F037E152B2941CA0096814D /* LoginView.swift */,
 				3F037E132B29418E0096814D /* LoginViewController.swift */,
 			);
@@ -161,7 +175,9 @@
 		3F037E1F2B29422A0096814D /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				3F037E6E2B2CA6710096814D /* TabBarViewController.swift */,
 				3F037E212B2942490096814D /* BaseView.swift */,
+				3F037E642B2CA4640096814D /* UserDefaultsKeyType.swift */,
 				3F037E232B294D5C0096814D /* Extension */,
 				3F037E202B2942310096814D /* API */,
 			);
@@ -188,6 +204,7 @@
 				3F037E262B294F450096814D /* UIImage+extension.swift */,
 				3F037E2E2B29C3090096814D /* UIFont+extension.swift */,
 				3F037E602B2BE9870096814D /* UIViewController+extension.swift */,
+				3F037E662B2CA4920096814D /* String+extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -205,8 +222,8 @@
 		3F037E322B29CE190096814D /* Join */ = {
 			isa = PBXGroup;
 			children = (
-				3F037E352B29CE410096814D /* JoinView.swift */,
 				3F037E5E2B2BE15F0096814D /* JoinViewModel.swift */,
+				3F037E352B29CE410096814D /* JoinView.swift */,
 				3F037E332B29CE360096814D /* JoinViewController.swift */,
 			);
 			path = Join;
@@ -235,11 +252,20 @@
 			isa = PBXGroup;
 			children = (
 				3F037E462B2B565C0096814D /* JoinStatusCode.swift */,
-				3F037E4F2B2B5BB50096814D /* LoginError.swift */,
+				3F037E4F2B2B5BB50096814D /* LoginStatusCode.swift */,
 				3F037E532B2B610F0096814D /* AcessTokenError.swift */,
 				3F037E552B2B631E0096814D /* Withdraw.swift */,
 			);
 			path = Error;
+			sourceTree = "<group>";
+		};
+		3F037E682B2CA4AE0096814D /* Picky */ = {
+			isa = PBXGroup;
+			children = (
+				3F037E6B2B2CA4E40096814D /* PickyView.swift */,
+				3F037E692B2CA4D60096814D /* PickyViewController.swift */,
+			);
+			path = Picky;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,18 +355,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F037E632B2C97750096814D /* LoginViewModel.swift in Sources */,
 				3F037E142B29418E0096814D /* LoginViewController.swift in Sources */,
 				3F037E442B2B53660096814D /* JoinModel.swift in Sources */,
 				3F037E252B294D720096814D /* UIColor+extension.swift in Sources */,
 				3F037E3F2B2A05070096814D /* APIInfo.swift in Sources */,
-				3F037E502B2B5BB60096814D /* LoginError.swift in Sources */,
+				3F037E502B2B5BB60096814D /* LoginStatusCode.swift in Sources */,
 				3F037E522B2B60C90096814D /* TokenModel.swift in Sources */,
 				3F037DF82B28CF6E0096814D /* AppDelegate.swift in Sources */,
 				3F037E222B2942490096814D /* BaseView.swift in Sources */,
+				3F037E6C2B2CA4E40096814D /* PickyView.swift in Sources */,
 				3F037E472B2B565C0096814D /* JoinStatusCode.swift in Sources */,
 				3F037E562B2B631E0096814D /* Withdraw.swift in Sources */,
+				3F037E672B2CA4920096814D /* String+extension.swift in Sources */,
 				3F037E5F2B2BE15F0096814D /* JoinViewModel.swift in Sources */,
 				3F037E342B29CE360096814D /* JoinViewController.swift in Sources */,
+				3F037E652B2CA4640096814D /* UserDefaultsKeyType.swift in Sources */,
+				3F037E6F2B2CA6710096814D /* TabBarViewController.swift in Sources */,
+				3F037E6A2B2CA4D60096814D /* PickyViewController.swift in Sources */,
 				3F037E272B294F450096814D /* UIImage+extension.swift in Sources */,
 				3F037E612B2BE9870096814D /* UIViewController+extension.swift in Sources */,
 				3F037E2F2B29C3090096814D /* UIFont+extension.swift in Sources */,

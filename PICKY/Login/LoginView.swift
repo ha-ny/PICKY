@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginView: BaseView {
+final class LoginView: BaseView {
     
     let logoLabel = {
         let view = UILabel()

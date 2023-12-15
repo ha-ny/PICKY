@@ -9,7 +9,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class JoinViewController: UIViewController {
+final class JoinViewController: UIViewController {
     
     private let mainView = JoinView()
     private let viewModel = JoinViewModel()
@@ -38,7 +38,7 @@ class JoinViewController: UIViewController {
 
             let joinData = JoinModel(email: email, password: password.sha256(), nick: nick)
             
-            owner.viewModel.translation(joinData: joinData) { status in
+            owner.viewModel.requestAPI(joinData: joinData) { status in
                 guard let status else {
                     owner.toastMessage(message: String.earlyExitMessge)
                     return

@@ -8,11 +8,11 @@
 import Foundation
 import Moya
 
-class JoinViewModel {
+final class JoinViewModel {
     
     private let apiManager = APIManager<APITarget.Account>()
 
-    func translation(joinData: JoinModel, completion: @escaping (JoinStatusCode?) -> ()) {
+    func requestAPI(joinData: JoinModel, completion: @escaping (JoinStatusCode?) -> ()) {
         apiManager.requestAPI(.join(model: joinData)) { success in
             guard let joinStatusCode = JoinStatusCode(rawValue: success.statusCode) else {
                 completion(nil)

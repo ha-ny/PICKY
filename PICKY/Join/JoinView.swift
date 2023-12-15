@@ -7,7 +7,7 @@
 
 import UIKit
 
-class JoinView: BaseView {
+final class JoinView: BaseView {
     
     let userImage = {
         let view = UIImageView()
@@ -18,7 +18,7 @@ class JoinView: BaseView {
         return view
     }()
     
-    let galleryButton = {
+    let cameraButton = {
         let view = UIButton()
         let configuration = UIImage.SymbolConfiguration(pointSize: 35)
         let image = UIImage(systemName: "camera.circle.fill", withConfiguration: configuration)
@@ -26,9 +26,10 @@ class JoinView: BaseView {
         view.tintColor = .signatureColor
         view.backgroundColor = .white
         view.layer.cornerRadius = 35
+        view.isHidden = true
         return view
     }()
-    
+
     let nickNameView = {
         let view = UIView()
         view.backgroundColor = .systemGray6
@@ -121,7 +122,7 @@ class JoinView: BaseView {
     
     override func setConfiguration() {
         addSubview(userImage)
-        addSubview(galleryButton)
+        addSubview(cameraButton)
         
         addSubview(nickNameView)
         nickNameView.addSubview(nickNameImage)
@@ -147,13 +148,13 @@ class JoinView: BaseView {
             $0.centerX.equalTo(self)
         }
         
-        galleryButton.snp.makeConstraints {
+        cameraButton.snp.makeConstraints {
             $0.bottom.equalTo(userImage.snp.bottom)
             $0.trailing.equalTo(userImage.snp.trailing)
         }
         
         nickNameView.snp.makeConstraints {
-            $0.top.equalTo(userImage.snp.bottom).offset(100)
+            $0.top.equalTo(userImage.snp.bottom).offset(80)
             $0.height.equalTo(50)
             $0.leading.trailing.equalTo(self).inset(24)
         }
@@ -173,7 +174,7 @@ class JoinView: BaseView {
         emailView.snp.makeConstraints {
             $0.top.equalTo(nickNameView.snp.bottom).offset(22)
             $0.height.equalTo(50)
-            $0.leading.trailing.equalTo(self).inset(24)
+            $0.leading.trailing.equalTo(nickNameView)
         }
         
         emailImage.snp.makeConstraints {
