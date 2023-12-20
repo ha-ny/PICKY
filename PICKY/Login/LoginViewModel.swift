@@ -22,9 +22,6 @@ class LoginViewModel {
             if loginStatusCode.rawValue == 200 {
                 do {
                     let data = try JSONDecoder().decode(ResponseLoginModel.self, from: success.data)
-                    print("token: ", data.token)
-                    print("--------------------------------")
-                    print("refreshToken: ", data.refreshToken)
                     UserDefaults.standard.setValue(data.token, forKey: UserDefaultsKeyType.token.rawValue)
                     UserDefaults.standard.setValue(data.refreshToken, forKey: UserDefaultsKeyType.refreshToken.rawValue)
                     completion(loginStatusCode)

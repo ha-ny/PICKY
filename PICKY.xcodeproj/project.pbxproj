@@ -17,7 +17,6 @@
 		3F037E1C2B2942140096814D /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 3F037E1B2B2942140096814D /* Moya */; };
 		3F037E222B2942490096814D /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E212B2942490096814D /* BaseView.swift */; };
 		3F037E252B294D720096814D /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E242B294D720096814D /* UIColor+extension.swift */; };
-		3F037E272B294F450096814D /* UIImage+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E262B294F450096814D /* UIImage+extension.swift */; };
 		3F037E2B2B29C2BC0096814D /* SCDream6.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3F037E292B29C2BC0096814D /* SCDream6.otf */; };
 		3F037E2C2B29C2BC0096814D /* SCDream4.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3F037E2A2B29C2BC0096814D /* SCDream4.otf */; };
 		3F037E2F2B29C3090096814D /* UIFont+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E2E2B29C3090096814D /* UIFont+extension.swift */; };
@@ -48,6 +47,14 @@
 		3F037E6C2B2CA4E40096814D /* PickyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E6B2B2CA4E40096814D /* PickyView.swift */; };
 		3F037E6F2B2CA6710096814D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E6E2B2CA6710096814D /* TabBarViewController.swift */; };
 		3F037E732B2CA9B70096814D /* PickyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E722B2CA9B70096814D /* PickyViewModel.swift */; };
+		3F037E752B30BE710096814D /* MyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E742B30BE710096814D /* MyListViewController.swift */; };
+		3F037E772B30BE7D0096814D /* FootPrintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E762B30BE7D0096814D /* FootPrintViewController.swift */; };
+		3F037E792B30BE9F0096814D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E782B30BE9F0096814D /* ProfileViewController.swift */; };
+		3F037E7B2B30C08C0096814D /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E7A2B30C08C0096814D /* TopView.swift */; };
+		3F037E7E2B30CA380096814D /* QuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E7D2B30CA380096814D /* QuestionCell.swift */; };
+		3F037E802B30CFD80096814D /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E7F2B30CFD80096814D /* BaseCell.swift */; };
+		3F037E822B31C4DF0096814D /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E812B31C4DF0096814D /* UIView+extension.swift */; };
+		3F037E852B32773B0096814D /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F037E842B32773B0096814D /* CommentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,7 +68,6 @@
 		3F037E152B2941CA0096814D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		3F037E212B2942490096814D /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		3F037E242B294D720096814D /* UIColor+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
-		3F037E262B294F450096814D /* UIImage+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+extension.swift"; sourceTree = "<group>"; };
 		3F037E292B29C2BC0096814D /* SCDream6.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream6.otf; sourceTree = "<group>"; };
 		3F037E2A2B29C2BC0096814D /* SCDream4.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream4.otf; sourceTree = "<group>"; };
 		3F037E2E2B29C3090096814D /* UIFont+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+extension.swift"; sourceTree = "<group>"; };
@@ -89,6 +95,14 @@
 		3F037E6B2B2CA4E40096814D /* PickyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickyView.swift; sourceTree = "<group>"; };
 		3F037E6E2B2CA6710096814D /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		3F037E722B2CA9B70096814D /* PickyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickyViewModel.swift; sourceTree = "<group>"; };
+		3F037E742B30BE710096814D /* MyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListViewController.swift; sourceTree = "<group>"; };
+		3F037E762B30BE7D0096814D /* FootPrintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootPrintViewController.swift; sourceTree = "<group>"; };
+		3F037E782B30BE9F0096814D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3F037E7A2B30C08C0096814D /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
+		3F037E7D2B30CA380096814D /* QuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCell.swift; sourceTree = "<group>"; };
+		3F037E7F2B30CFD80096814D /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		3F037E812B31C4DF0096814D /* UIView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
+		3F037E842B32773B0096814D /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +175,7 @@
 		3F037E0F2B293E7E0096814D /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				3F037E782B30BE9F0096814D /* ProfileViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -168,6 +183,7 @@
 		3F037E102B293E9A0096814D /* Footprint */ = {
 			isa = PBXGroup;
 			children = (
+				3F037E762B30BE7D0096814D /* FootPrintViewController.swift */,
 			);
 			path = Footprint;
 			sourceTree = "<group>";
@@ -175,8 +191,8 @@
 		3F037E1F2B29422A0096814D /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				3F037E212B2942490096814D /* BaseView.swift */,
 				3F037E642B2CA4640096814D /* UserDefaultsKeyType.swift */,
+				3F037E7C2B30C7130096814D /* CustomView */,
 				3F037E232B294D5C0096814D /* Extension */,
 				3F037E202B2942310096814D /* API */,
 			);
@@ -200,10 +216,10 @@
 			isa = PBXGroup;
 			children = (
 				3F037E242B294D720096814D /* UIColor+extension.swift */,
-				3F037E262B294F450096814D /* UIImage+extension.swift */,
 				3F037E2E2B29C3090096814D /* UIFont+extension.swift */,
 				3F037E602B2BE9870096814D /* UIViewController+extension.swift */,
 				3F037E662B2CA4920096814D /* String+extension.swift */,
+				3F037E812B31C4DF0096814D /* UIView+extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -261,6 +277,7 @@
 		3F037E682B2CA4AE0096814D /* MyList */ = {
 			isa = PBXGroup;
 			children = (
+				3F037E742B30BE710096814D /* MyListViewController.swift */,
 			);
 			path = MyList;
 			sourceTree = "<group>";
@@ -270,6 +287,7 @@
 			children = (
 				3F037E6E2B2CA6710096814D /* TabBarViewController.swift */,
 				3F037E712B2CA9790096814D /* PICKY */,
+				3F037E832B32771F0096814D /* Comment */,
 				3F037E682B2CA4AE0096814D /* MyList */,
 				3F037E102B293E9A0096814D /* Footprint */,
 				3F037E0F2B293E7E0096814D /* Profile */,
@@ -283,8 +301,27 @@
 				3F037E722B2CA9B70096814D /* PickyViewModel.swift */,
 				3F037E6B2B2CA4E40096814D /* PickyView.swift */,
 				3F037E692B2CA4D60096814D /* PickyViewController.swift */,
+				3F037E7D2B30CA380096814D /* QuestionCell.swift */,
 			);
 			path = PICKY;
+			sourceTree = "<group>";
+		};
+		3F037E7C2B30C7130096814D /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				3F037E212B2942490096814D /* BaseView.swift */,
+				3F037E7F2B30CFD80096814D /* BaseCell.swift */,
+				3F037E7A2B30C08C0096814D /* TopView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		3F037E832B32771F0096814D /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				3F037E842B32773B0096814D /* CommentViewController.swift */,
+			);
+			path = Comment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,26 +417,33 @@
 				3F037E252B294D720096814D /* UIColor+extension.swift in Sources */,
 				3F037E3F2B2A05070096814D /* APIInfo.swift in Sources */,
 				3F037E502B2B5BB60096814D /* LoginStatusCode.swift in Sources */,
+				3F037E792B30BE9F0096814D /* ProfileViewController.swift in Sources */,
 				3F037E522B2B60C90096814D /* TokenModel.swift in Sources */,
+				3F037E852B32773B0096814D /* CommentViewController.swift in Sources */,
 				3F037DF82B28CF6E0096814D /* AppDelegate.swift in Sources */,
 				3F037E222B2942490096814D /* BaseView.swift in Sources */,
+				3F037E822B31C4DF0096814D /* UIView+extension.swift in Sources */,
 				3F037E6C2B2CA4E40096814D /* PickyView.swift in Sources */,
 				3F037E472B2B565C0096814D /* JoinStatusCode.swift in Sources */,
 				3F037E562B2B631E0096814D /* Withdraw.swift in Sources */,
+				3F037E752B30BE710096814D /* MyListViewController.swift in Sources */,
 				3F037E732B2CA9B70096814D /* PickyViewModel.swift in Sources */,
 				3F037E672B2CA4920096814D /* String+extension.swift in Sources */,
 				3F037E5F2B2BE15F0096814D /* JoinViewModel.swift in Sources */,
 				3F037E342B29CE360096814D /* JoinViewController.swift in Sources */,
+				3F037E802B30CFD80096814D /* BaseCell.swift in Sources */,
 				3F037E652B2CA4640096814D /* UserDefaultsKeyType.swift in Sources */,
+				3F037E772B30BE7D0096814D /* FootPrintViewController.swift in Sources */,
 				3F037E6F2B2CA6710096814D /* TabBarViewController.swift in Sources */,
 				3F037E6A2B2CA4D60096814D /* PickyViewController.swift in Sources */,
-				3F037E272B294F450096814D /* UIImage+extension.swift in Sources */,
 				3F037E612B2BE9870096814D /* UIViewController+extension.swift in Sources */,
+				3F037E7B2B30C08C0096814D /* TopView.swift in Sources */,
 				3F037E2F2B29C3090096814D /* UIFont+extension.swift in Sources */,
 				3F037E162B2941CA0096814D /* LoginView.swift in Sources */,
 				3F037E4E2B2B5B890096814D /* LoginModel.swift in Sources */,
 				3F037E362B29CE410096814D /* JoinView.swift in Sources */,
 				3F037E542B2B610F0096814D /* AcessTokenError.swift in Sources */,
+				3F037E7E2B30CA380096814D /* QuestionCell.swift in Sources */,
 				3F037E412B2A18B70096814D /* APIManager.swift in Sources */,
 				3F037E3B2B2A03F20096814D /* APITarget.swift in Sources */,
 				3F037DFA2B28CF6E0096814D /* SceneDelegate.swift in Sources */,
@@ -542,7 +586,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -573,7 +617,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

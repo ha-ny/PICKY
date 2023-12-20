@@ -26,7 +26,7 @@ final class LoginView: BaseView {
     
     let emailImage = {
         let view = UIImageView()
-        view.image = UIImage.customImage(imageName: .email)
+        view.image = UIImage.iconEmail
         view.contentMode = .scaleAspectFit
         return view
     }()
@@ -47,7 +47,7 @@ final class LoginView: BaseView {
     
     let passwordImage = {
         let view = UIImageView()
-        view.image = UIImage.customImage(imageName: .password)
+        view.image = UIImage.iconPassword
         view.contentMode = .scaleAspectFit
         return view
     }()
